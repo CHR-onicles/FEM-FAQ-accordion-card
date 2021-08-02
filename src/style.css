@@ -99,10 +99,6 @@ body {
 .question-text img {
     width: 12px;
 }
-.question-text:hover {
-    cursor: pointer;
-    color: var(--clr-soft-red);
-}
 .answer {
     display: none;
     color: var(--clr-dark-gray-blue);
@@ -184,5 +180,9 @@ End Active state
         display: flex;
         flex-direction: column;
         flex: 1 1 auto;
+    }
+    .question-text:hover {
+        cursor: pointer;
+        color: var(--clr-soft-red);
     }
 }
