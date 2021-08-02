@@ -5,28 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <main>
+    <!-- card -->
+    <section class="card">
+      <div class="card-illustration">
+        <div class="card-bg-pattern"></div> <!-- hidden on mobile -->
+        <div class="card-bg-img"></div>
+        <div class="card-img-shadow"></div>
+      </div>
+      <!-- card content -->
+      <div class="card-content">
+        <h1 class="card-header">FAQ</h1>
+        <!-- question 1 -->
+        <article class="question">
+          <h2 class="question-text">
+            How many team members can I invite?
+          </h2>
+          <p class="answer">
+            You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.
+          </p>
+        </article>
+        <!-- End question 1 -->
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+        <!-- question 2 -->
+        <article class="question">
+          <h2 class="question-text">
+            What is the maximum file upload size?
+          </h2>
+          <p class="answer">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+        </article>
+        <!-- End question 2 -->
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+        <!-- question 3 -->
+        <article class="question">
+          <h2 class="question-text">
+            How do I reset my password?
+          </h2>
+          <p class="answer">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </p>
+        </article>
+        <!-- End question 3-->
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+        <!-- question 4 -->
+        <article class="question">
+          <h2 class="question-text">
+            Can I cancel my subscription?
+          </h2>
+          <p class="answer">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </p>
+        </article>
+        <!-- End question 4 -->
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        <!-- question 5 -->
+        <article class="question">
+          <h2 class="question-text">
+            Do you provide additional support?
+          </h2>
+          <p class="answer">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </p>
+        </article>
+        <!-- End question 5 -->
+      </div>
+      <!-- End card content -->
 
+    </section>
+    <!-- End card -->
+  </main>
+
+  <!-- footer -->
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/CHR-onicles">CHR-onicles</a>.
   </footer>
+  <!-- End footer -->
+
+  <!-- Javascript -->
+  <script src="./script.js"></script>
+
 </body>
 </html>

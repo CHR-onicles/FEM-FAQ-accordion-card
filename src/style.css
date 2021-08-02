@@ -1,14 +1,26 @@
 /*================
 FONTS
 /*===============*/
-
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 /*================
 GLOBAL VARIABLES
 /*===============*/
 :root {
-    --ff-primary: "";
-    --ff-size: 13px;
+    /* Text */
+    --ff-primary: 'Kumbh Sans', sans-serif;
+    --ff-size: 12px;
+    --clr-dark-desat-blue: hsl(238, 29%, 16%);
+    --clr-soft-red: hsl(14, 88%, 65%);
+    --clr-v-dark-gray-blue: hsl(237, 12%, 33%);
+    --clr-dark-gray-blue: hsl(240, 6%, 50%);
+
+    /* background gradient */
+    --clr-soft-violet: hsl(273, 75%, 66%);
+    --clr-soft-blue: hsl(240, 73%, 65%);
+
+    /* Dividers */
+    --clr-light-gray-blue: hsl(240, 5%, 91%);
 }
 *,
 *::before,
@@ -16,6 +28,39 @@ GLOBAL VARIABLES
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(var(--clr-soft-violet), var(--clr-soft-blue));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.card{
+    height: 33rem;
+    width: 21.5625rem;
+    background: white;
+    border-radius: 20px;
+}
+.card-illustration{
+
+}
+.card-bg-pattern{
+    display: none;
+}
+.card-bg-img{
+
+}
+.card-img-shadow{
+    
+}
+.card-content{
+
+}
+.card-header{
+
 }
 .attribution {
     font-size: 11px;
