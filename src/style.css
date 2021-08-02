@@ -71,13 +71,48 @@ body{
     transform: translate(5%, -80%);
 }
 .card-content{
-
 }
 .card-header-text{
     font-size: 30px;
     font-weight: 700;
     text-align: center;
     color: var(--clr-dark-desat-blue);
+}
+.questions{
+    list-style-type: none;
+    padding: 3em 2em;
+}
+.question{
+    border-bottom: 1px solid var(--clr-light-gray-blue);
+}
+.question:first-child{
+    padding-bottom: 1.5em;
+}
+.question:not(.question:first-child){
+    padding: 1.5em 0;
+}
+.question-text{
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--clr-v-dark-gray-blue);
+    display: flex;
+    justify-content: space-between;
+    transition: color .3s;
+}
+.question-text img{
+    width: 12px;
+}
+.question-text:hover{
+    cursor: pointer;
+    color: var(--clr-soft-red);
+}
+.answer{
+    color: var(--clr-dark-gray-blue);
+    line-height: 20px;
+    padding: .8em 0;
+    width: 90%;
+    word-wrap: break-word;
+    display: none;
 }
 .attribution {
     font-size: 11px;
