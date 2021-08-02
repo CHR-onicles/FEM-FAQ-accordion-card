@@ -129,6 +129,20 @@ End Active state
 .attribution a {
     color: white;
 }
+@media screen and (max-width: 376px) {
+    /* extra small phones */
+    body{
+        height: auto;
+        padding: 8rem 0 3rem;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 991px) {
+    /* devices in landscape mode */
+    body{
+        height: auto;
+        padding: 9rem 0 5rem;
+    }
+}
 @media screen and (min-width: 992px) {
     .card {
         height: 500px;
