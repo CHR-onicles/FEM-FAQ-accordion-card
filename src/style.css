@@ -31,7 +31,11 @@ GLOBAL VARIABLES
 }
 body{
     height: 100vh;
+    padding-top: 5rem;
     background: linear-gradient(var(--clr-soft-violet), var(--clr-soft-blue));
+    font-family: var(--ff-primary);
+    font-size: var(--ff-size);
+    font-weight: 400; /* default */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,29 +47,42 @@ body{
     width: 21.5625rem;
     background: white;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 20px rgba(0,0,0,.3);
 }
 .card-illustration{
-
+    position: relative;
+    width: 100%;
+    margin-bottom: 9rem;
 }
-.card-bg-pattern{
+.desktop-illustration{
     display: none;
 }
-.card-bg-img{
-
+.mobile-illustration{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-55%, -34%);
 }
-.card-img-shadow{
-    
+.mobile-illustration img:nth-child(2){
+    transform: translate(5%, -80%);
 }
 .card-content{
 
 }
-.card-header{
-
+.card-header-text{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--clr-dark-desat-blue);
 }
 .attribution {
     font-size: 11px;
     text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: white;
 }
