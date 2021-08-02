@@ -96,6 +96,9 @@ body {
     color: var(--clr-v-dark-gray-blue);
     transition: color 0.3s;
 }
+.question-text:hover {
+    cursor: pointer;
+}
 .question-text img {
     width: 12px;
 }
